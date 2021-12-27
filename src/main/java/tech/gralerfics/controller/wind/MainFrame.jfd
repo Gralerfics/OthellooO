@@ -1,0 +1,108 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 0
+			"title": "OthellooO!"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			"resizable": false
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "assets/guiimages/icon.jpg" )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "playerBtn"
+				"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"background": new java.awt.Color( 204, 102, 255, 255 )
+				"text": "Players & Ranking"
+				"horizontalAlignment": 0
+				"opaque": true
+				"font": &Font0 new java.awt.Font( "Roboto Light", 2, 20 )
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "playerBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 196
+				"height": 38
+				"x": 345
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "profileBtn"
+				"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"background": new java.awt.Color( 255, 204, 0, 255 )
+				"text": "Profiles"
+				"horizontalAlignment": 0
+				"opaque": true
+				"font": #Font0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "profileBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 196
+				"height": 37
+				"x": 140
+				"y": 245
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "quitBtn"
+				"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"background": new java.awt.Color( 153, 153, 153, 255 )
+				"text": "Quit"
+				"horizontalAlignment": 0
+				"opaque": true
+				"font": #Font0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "quitBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 196
+				"height": 37
+				"x": 345
+				"y": 245
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "othelloooBtn"
+				"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"background": new java.awt.Color( 255, 153, 51, 255 )
+				"text": "OthellooO!"
+				"horizontalAlignment": 0
+				"opaque": true
+				"font": #Font0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "othelloooBtnMouseReleased", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseEntered", "othelloooBtnMouseEntered", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 196
+				"height": 38
+				"x": 140
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"icon": new com.jformdesigner.model.SwingIcon( 1, "assets/guiimages/B.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": -5
+				"y": -5
+				"width": 725
+				"height": 530
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 675, 500 )
+		} )
+		add( new FormComponent( "javax.swing.JLabel" ) {
+			name: "optionBtn"
+			"icon": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			"background": new java.awt.Color( 102, 153, 255, 255 )
+			"text": "Options"
+			"horizontalAlignment": 0
+			"opaque": true
+			"font": new java.awt.Font( "Roboto Condensed", 3, 18 )
+			"foreground": sfield java.awt.Color white
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 685, 0 )
+			"size": new java.awt.Dimension( 196, 37 )
+		} )
+	}
+}

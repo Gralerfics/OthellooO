@@ -1,0 +1,556 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 0
+			"resizable": false
+			"title": "Status Inspector"
+			"iconImage": new com.jformdesigner.model.SwingIcon( 1, "assets/guiimages/icon.jpg" )
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosing", "thisWindowClosing", true ) )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "statusLab"
+				"font": new java.awt.Font( "Roboto Light", 1, 18 )
+				"horizontalAlignment": 0
+				"background": new java.awt.Color( 102, 102, 102, 255 )
+				"opaque": true
+				"foreground": sfield java.awt.Color white
+				"text": "Messages."
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 5
+				"width": 385
+				"height": 115
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "ply1"
+				"background": new java.awt.Color( 205, 205, 205, 255 )
+				"font": &Font0 new java.awt.Font( "Roboto Light", 1, 16 )
+				"foreground": sfield java.awt.Color white
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "infLab1"
+					"text": "TestBlack"
+					"font": &Font1 new java.awt.Font( "Roboto Light", 1, 11 )
+					"foreground": sfield java.awt.Color darkGray
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 20
+					"width": 140
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "modBtn1"
+					"background": &Color0 new java.awt.Color( 255, 204, 102, 255 )
+					"opaque": true
+					"font": &Font2 new java.awt.Font( "Roboto Light", 1, 13 )
+					"text": "CHANGE"
+					"horizontalAlignment": 0
+					"foreground": sfield java.awt.Color white
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "modBtn1MouseReleased", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 50
+					"x": 10
+					"y": 45
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ptr1"
+					"background": new java.awt.Color( 0, 0, 0, 255 )
+					"opaque": true
+					"font": &Font3 new java.awt.Font( "Roboto Light", 2, 12 )
+					"foreground": sfield java.awt.Color white
+					"text": "2"
+					"horizontalTextPosition": 0
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 150
+					"height": 15
+					"x": 5
+					"y": 5
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cheatBtn1"
+					"background": new java.awt.Color( 0, 204, 102, 255 )
+					"opaque": true
+					"text": "CHEAT"
+					"horizontalAlignment": 0
+					"font": new java.awt.Font( "Roboto Light", 1, 13 )
+					"foreground": sfield java.awt.Color white
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "cheatBtn1MouseReleased", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 50
+					"x": 80
+					"y": 45
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 160
+				"height": 105
+				"x": 400
+				"y": 25
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "ply2"
+				"background": new java.awt.Color( 159, 159, 159, 255 )
+				"font": #Font0
+				"foreground": sfield java.awt.Color white
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "infLab2"
+					"text": "TestWhite"
+					"font": #Font1
+					"foreground": sfield java.awt.Color darkGray
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 20
+					"width": 140
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "modBtn2"
+					"background": #Color0
+					"opaque": true
+					"horizontalAlignment": 0
+					"font": #Font2
+					"text": "CHANGE"
+					"foreground": sfield java.awt.Color white
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "modBtn2MouseReleased", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 50
+					"x": 10
+					"y": 45
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ptr2"
+					"background": sfield java.awt.Color white
+					"opaque": true
+					"font": #Font3
+					"text": "2"
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 150
+					"height": 15
+					"x": 5
+					"y": 5
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "cheatBtn2"
+					"background": new java.awt.Color( 255, 102, 102, 255 )
+					"opaque": true
+					"font": #Font2
+					"text": "CHEAT"
+					"horizontalAlignment": 0
+					"foreground": sfield java.awt.Color white
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "cheatBtn2MouseReleased", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 50
+					"x": 80
+					"y": 45
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 160
+				"height": 105
+				"x": 400
+				"y": 135
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "restartBtn"
+				"background": #Color0
+				"opaque": true
+				"font": &Font4 new java.awt.Font( "Roboto Light", 1, 14 )
+				"text": "Start a new game"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "restartBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 125
+				"height": 50
+				"x": 5
+				"y": 125
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "redoBtn"
+				"background": new java.awt.Color( 255, 102, 102, 255 )
+				"opaque": true
+				"font": #Font4
+				"text": "Redo"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "redoBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 125
+				"height": 25
+				"x": 135
+				"y": 125
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "backBtn"
+				"background": new java.awt.Color( 204, 204, 204, 255 )
+				"opaque": true
+				"font": #Font4
+				"text": "Back to menu"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "backBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 125
+				"height": 50
+				"x": 265
+				"y": 125
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "draggingBtn"
+				"background": new java.awt.Color( 51, 153, 255, 255 )
+				"opaque": true
+				"font": &Font5 new java.awt.Font( "Roboto Light", 1, 14 )
+				"text": "Dragging Mode"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "draggingBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 15
+				"y": 365
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "wanderingBtn"
+				"background": new java.awt.Color( 153, 204, 255, 255 )
+				"opaque": true
+				"font": #Font5
+				"text": "Wandering Mode"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "wanderingBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 150
+				"y": 365
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "RoundingBtn"
+				"background": new java.awt.Color( 153, 204, 255, 255 )
+				"opaque": true
+				"font": #Font5
+				"text": "Rounding Mode"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "RoundingBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 285
+				"y": 365
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "OverlookingBtn"
+				"background": new java.awt.Color( 153, 204, 255, 255 )
+				"opaque": true
+				"font": #Font5
+				"text": "Overlooking Mode"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "OverlookingBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 420
+				"y": 365
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "cameraSettingPane"
+				"background": &Color1 new java.awt.Color( 224, 224, 224, 255 )
+				"opaque": true
+				"font": &Font6 new java.awt.Font( "Roboto Light", 1, 13 )
+				"horizontalAlignment": 0
+				"text": "Camera Settings"
+				"verticalAlignment": 1
+				"foreground": sfield java.awt.Color darkGray
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 545
+				"height": 65
+				"x": 10
+				"y": 345
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "simpleBoardBtn"
+				"background": &Color2 new java.awt.Color( 153, 204, 255, 255 )
+				"opaque": true
+				"font": #Font5
+				"text": "Simplify Board"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "simpleBoardBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 15
+				"y": 480
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "specularBoardBtn"
+				"background": #Color2
+				"opaque": true
+				"font": #Font5
+				"text": "Specular Board "
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "specularBoardBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 285
+				"y": 480
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "simpleChessBtn"
+				"background": #Color2
+				"opaque": true
+				"font": #Font5
+				"text": "Simplify Chess"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "simpleChessBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 15
+				"y": 435
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "hdrBtn"
+				"background": &Color3 new java.awt.Color( 153, 204, 255, 255 )
+				"opaque": true
+				"font": #Font5
+				"text": "Hdr Background"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "hdrBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 285
+				"y": 435
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "boardLightBtn"
+				"background": #Color3
+				"opaque": true
+				"font": #Font5
+				"text": "Light of Board"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "boardLightBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 150
+				"y": 480
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "chessLightBtn"
+				"background": #Color3
+				"opaque": true
+				"font": #Font5
+				"text": "Light of Chess"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "chessLightBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 150
+				"y": 435
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "depthBtn"
+				"background": &Color4 new java.awt.Color( 51, 153, 255, 255 )
+				"opaque": true
+				"font": #Font5
+				"text": "Raytracing Depth"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "depthBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 420
+				"y": 480
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "showPlaceBtn"
+				"background": &Color5 new java.awt.Color( 153, 204, 255, 255 )
+				"opaque": true
+				"font": #Font5
+				"text": "Show Legal Places"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "showPlaceBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 265
+				"height": 35
+				"x": 15
+				"y": 300
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "showLastPlaceBtn"
+				"background": #Color5
+				"opaque": true
+				"font": #Font5
+				"text": "Show Last Place"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "showLastPlaceBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 265
+				"height": 35
+				"x": 285
+				"y": 300
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "gameSettingPane"
+				"background": #Color1
+				"opaque": true
+				"font": #Font6
+				"horizontalAlignment": 0
+				"text": "Game Settings"
+				"verticalAlignment": 1
+				"foreground": sfield java.awt.Color darkGray
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 545
+				"height": 60
+				"x": 10
+				"y": 280
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "moreSettingsBtn"
+				"background": new java.awt.Color( 102, 153, 255, 255 )
+				"opaque": true
+				"font": #Font5
+				"text": "More Settings..."
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "moreSettingsBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 570
+				"height": 20
+				"x": 0
+				"y": 250
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "playerSeatPane"
+				"background": #Color1
+				"opaque": true
+				"font": new java.awt.Font( "Roboto Light", 1, 13 )
+				"horizontalAlignment": 0
+				"text": "Player Seats"
+				"verticalAlignment": 1
+				"foreground": sfield java.awt.Color darkGray
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 170
+				"height": 240
+				"x": 395
+				"y": 5
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "surLightBtn"
+				"background": #Color4
+				"opaque": true
+				"font": #Font5
+				"text": "Surrounding Light"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "surLightBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 40
+				"x": 420
+				"y": 435
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "viewingSettingPane"
+				"background": #Color1
+				"opaque": true
+				"font": #Font6
+				"horizontalAlignment": 0
+				"text": "Video Settings"
+				"verticalAlignment": 1
+				"foreground": sfield java.awt.Color darkGray
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 545
+				"height": 110
+				"x": 10
+				"y": 415
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "loadBtn"
+				"background": &Color6 new java.awt.Color( 204, 153, 255, 255 )
+				"opaque": true
+				"font": &Font7 new java.awt.Font( "Roboto Light", 1, 14 )
+				"text": "Load Game"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "loadBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 185
+				"height": 40
+				"x": 10
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "saveBtn"
+				"background": #Color6
+				"opaque": true
+				"font": #Font7
+				"text": "Save Game"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "saveBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 185
+				"height": 40
+				"x": 200
+				"y": 200
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "profilePane"
+				"background": #Color1
+				"opaque": true
+				"font": #Font6
+				"horizontalAlignment": 0
+				"text": "Profile Manager"
+				"verticalAlignment": 1
+				"foreground": sfield java.awt.Color darkGray
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 385
+				"height": 65
+				"x": 5
+				"y": 180
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "replayBtn"
+				"background": new java.awt.Color( 51, 204, 255, 255 )
+				"opaque": true
+				"font": #Font4
+				"text": "Replay"
+				"horizontalAlignment": 0
+				"foreground": sfield java.awt.Color white
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseReleased", "replayBtnMouseReleased", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 125
+				"height": 25
+				"x": 135
+				"y": 150
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 570, 570 )
+		} )
+	}
+}
