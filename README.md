@@ -35,9 +35,10 @@ AI 棋手部分来自 @Maystern，分级代表迭代搜索深度。
 
 一些图：
 
-![](display/20211227 1.png)
-![](display/20211227 2.png)
-![](display/20211208 Test hdr 1.jpg))
-![](display/20211117 Test LargeWindow.jpg)
-![](display/frame 1.png)
-![](display/frame 2.png)
+<div align="center"><img src="display/20211227 1.png" width="500"></div>
+
+<div align="center"><img src="display/20211227 2.png" width="500"></div>
+
+<div align="center"><img src="display/20211208 Test hdr 1.jpg" width="250">&nbsp &nbsp<img src="display/20211117 Test LargeWindow.jpg" width="250"></div>
+
+<div align="center"><img src="display/frame 1.png" width="250">&nbsp &nbsp<img src="display/frame 2.png" width="250"></div>
