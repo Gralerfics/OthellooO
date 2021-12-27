@@ -5,7 +5,7 @@
 
 ---
 
-框架用的 LWJGL，用 Java 写图形其实还是挺怪的（咳）。
+框架用的 LWJGL，用 Java 写图形其实还是挺怪的（咳）。重写片段着色器，在 glsl 里写光追。
 
 GPU 光线追踪参考: https://blog.csdn.net/weixin_44176696/article/details/119044396
 
