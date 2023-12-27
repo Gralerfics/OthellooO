@@ -29,7 +29,7 @@ Swing 也是头一次用，稍微重写了一下 ScrollPane 和一些输入框�
 
 第一次用 Java / Maven 写比较大的程序，可能也是最后一次（咳），代码写得很乱，就是这么一传，没指望有人改hhhh。
 
-AI 棋手部分来自 @Maystern，分级代表迭代搜索深度。
+AI 棋手部分来自 @[Maystern](https://github.com/Maystern)，分级代表迭代搜索深度。
 
 ---
 
