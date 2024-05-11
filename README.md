@@ -1,39 +1,24 @@
 # OthellooO
-大学 Java 课的期末作业 Project，黑白棋。
 
-存档管理、玩家管理、悔棋、回放之类的，没写联机、个性化主题什么的（玩家主题色可以改改 xs）。
+使用 Java、Swing 与 LWJGL 框架实现的三维黑白棋（翻转棋）游戏。除游戏主逻辑外包括存档管理、玩家管理、人机对战、悔棋、回放、个性化主题色等功能。
 
----
+图形框架使用 LWJGL，在片段着色器中实现光线追踪、PBR 材质、Hdr 背景，以及八叉树、重要性采样等优化。
 
-框架用的 LWJGL，用 Java 写图形其实还是挺怪的（咳）。重写片段着色器，在 glsl 里写光追。
+## Acknowledgment
 
-GPU 光线追踪参考: https://blog.csdn.net/weixin_44176696/article/details/119044396
+具体实现参考成分较多，主要参考来源如下：
 
-BRDF 参考: https://blog.csdn.net/weixin_44176696/article/details/119791772
+GPU 光线追踪参考: [https://blog.csdn.net/weixin_44176696/article/details/119044396](https://blog.csdn.net/weixin_44176696/article/details/119044396)
 
-片段着色器核心部分其实基本是照着写，权作入门学习。
+BRDF 参考: [https://blog.csdn.net/weixin_44176696/article/details/119791772](https://blog.csdn.net/weixin_44176696/article/details/119791772)
 
-优化也是照着写，甚至可能没写好（笑），需要点电脑配置；设置面板有不少简化选项，用以降低配置需求（主要是我自己跑不起来）。
+Hdr 读取使用: [https://github.com/Ivelate/JavaHDR](https://github.com/Ivelate/JavaHDR)
 
----
+Hdr 图片来自: [https://polyhaven.com/hdris](https://polyhaven.com/hdris)
 
-Hdr 读取用了: https://github.com/Ivelate/JavaHDR
+人机对战 AI 棋手部分来自 [@Maystern](https://github.com/Maystern)
 
-Hdr 图片来自: https://polyhaven.com/hdris
-
----
-
-Swing 也是头一次用，稍微重写了一下 ScrollPane 和一些输入框什么的。
-
----
-
-第一次用 Java / Maven 写比较大的程序，可能也是最后一次（咳），代码写得很乱，就是这么一传，没指望有人改hhhh。
-
-AI 棋手部分来自 @[Maystern](https://github.com/Maystern)，分级代表迭代搜索深度。
-
----
-
-一些图：
+## Screenshots
 
 <div align="center"><img src="display/menu.png" width="500"></div>
 
